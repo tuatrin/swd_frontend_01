@@ -1,6 +1,13 @@
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
+import React from "react";
+import { ConfigProvider } from "antd";
 import type { AppProps } from "next/app";
+import { appWithTranslation } from "next-i18next";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }: AppProps) => (
+  <ConfigProvider>
+    <Component {...pageProps} />
+  </ConfigProvider>
+);
+
+export default appWithTranslation(App);
