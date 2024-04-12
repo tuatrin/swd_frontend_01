@@ -1,0 +1,90 @@
+.main {
+  height: 100vh;
+  display: flex;
+  padding: 8px;
+  background: rgb(110,218,120);
+  background: linear-gradient(45deg, #6eda78 0%, #ffa200 100%);
+}
+
+
+.triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid gray;
+}
+
+.triangleUp {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gray;
+}
+
+.triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid gray;
+  border-bottom: 50px solid transparent;
+}
+
+.triangleLeft {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid gray;
+  border-bottom: 50px solid transparent;
+}
+
+
+.square {
+  width: 300px;
+  height: 300px;
+  background: black;
+}
+
+
+.trapezoid {
+  border-bottom: 100px solid gray;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.parallelogram {
+  width:  90%;
+  height: 100px;
+  transform: skew(20deg);
+  background: gray;
+}
+
+.rectangle {
+  width:  100%;
+  height: 100px;
+  background: gray;
+}
+
+.oval {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  border-radius: 100px / 50px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  border-radius: 50%
+}
